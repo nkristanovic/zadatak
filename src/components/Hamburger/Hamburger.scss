@@ -1,0 +1,49 @@
+@import '../../lib/style/theme.scss';
+
+.Hamburger {
+    &-Nav {
+        width: 25px;
+    }
+
+    &-NavLine {
+        width: 100%;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $lightGrey;
+        margin-bottom: 6px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-NavHamburger {
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 65px;
+        max-width: 1024px;
+        background-color: $white;
+        color: $lightBlue;
+        position: fixed;
+        top: 0;
+        right: 0;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    &-NavHamburgerItem {
+        padding: 15px 10px;
+        text-decoration: none;
+
+        @media ($mobileLarge) {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and ($desktop) {
+        display: none;
+    }
+}
