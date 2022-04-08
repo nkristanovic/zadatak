@@ -1,0 +1,135 @@
+@import '../../lib/style/theme.scss';
+
+.Header {
+    background-color: $white;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &-Inner {
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-ButtonContainer {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        border: 1px solid $lightBlue;
+    }
+
+    &-Vectors {
+        height: 100%;
+        margin-left: -1px;
+        object-fit: contain;
+    }
+
+    &-Text {
+        line-height: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: $lightBlue;
+    }
+
+    &-Nav {
+        display: none;
+    }
+
+    &-NavHamburger {
+        width: 25px;
+    }
+
+    &-NavHamburgerLine {
+        width: 100%;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $darkGrey;
+        margin-bottom: 6px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and ($tablet) {
+        &-Inner {
+            padding: 15px 25px;
+        }
+    }
+
+    @media screen and ($desktop) {
+        &-Inner {
+            padding: 0 190px 0 200px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        &-ButtonContainer {
+            width: 95px;
+        }
+
+        &-Nav {
+            display: block;
+        }
+
+        &-NavItem {
+            display: inline-block;
+            text-decoration: none;
+            color: $lightGrey;
+            line-height: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 15px 0;
+            margin-right: 60px;
+            cursor: pointer;
+
+            &:hover {
+                color: $lightBlue;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &_active {
+                color: $lightBlue;
+            }
+        }
+    }
+
+    @media screen and ($desktopLarge) {
+        &-Inner {
+            padding: 0 240px 0 262px;
+            max-width: 1280px;
+        }
+
+        &-ButtonContainer {
+            width: 115px;
+        }
+
+        &-Text {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        &-NavItem {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and ($desktopExtraLarge) {
+        &-Inner {
+            padding: 0 310px 0 335px;
+            max-width: 1580px;
+        }
+    }
+}
