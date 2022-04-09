@@ -1,0 +1,30 @@
+@import '../../lib/style/theme.scss';
+
+.Grid {
+    display: grid;
+    justify-items: center;
+
+    @media screen and ($mobileLarge) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 697px;
+        margin: 0 auto;
+    }
+
+    @media screen and ($desktop) {
+        padding: 0 190px 0 200px;
+        max-width: 1024px;
+        justify-items: start;
+    }
+
+    @media screen and ($desktopLarge) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 240px 0 262px;
+        max-width: 1440px;
+        column-gap: 12px;
+    }
+
+    @media screen and ($desktopExtraLarge) {
+        padding: 0 310px 0 335px;
+        max-width: 1580px;
+    }
+}
