@@ -34,7 +34,7 @@
 
     &-Text {
         line-height: 50px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: $lightBlue;
@@ -86,8 +86,8 @@
             text-decoration: none;
             color: $lightGrey;
             line-height: 50px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
             font-size: 16px;
             margin: 15px 0;
             margin-right: 60px;
@@ -110,7 +110,7 @@
     @media screen and ($desktopLarge) {
         &-Inner {
             padding: 0 240px 0 262px;
-            max-width: 1280px;
+            max-width: 1440px;
         }
 
         &-ButtonContainer {

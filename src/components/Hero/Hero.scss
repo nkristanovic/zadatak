@@ -14,10 +14,10 @@
     }
 
     &-HeaderLogo {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: $black;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 38px;
         margin-right: 50px;
         margin-top: 30px;
     }
@@ -29,7 +29,6 @@
     &-Image {
         height: 300px;
         object-fit: cover;
-
     }
 
     &-Figure {
@@ -48,12 +47,12 @@
     @media screen and ($desktop) {
         &-Header {
             justify-content: flex-start;
-            padding: 0 190px 0 200px;
+            padding: 0 190px 0 195px;
             max-width: 1024px;
         }
 
         &-HeaderLogo {
-            font-size: 50px;
+            font-size: 68px;
             line-height: 116px;
             margin-right: 110px;
             margin-top: 20px;
@@ -67,19 +66,19 @@
 
     @media screen and ($desktopLarge) {
         &-Header {
-            padding: 0 240px 0 262px;
-            max-width: 1280px;
+            padding: 0 240px 0 255px;
+            max-width: 1440px;
             margin-bottom: 60px;
         }
 
         &-HeaderLogo {
-            font-size: 70px;
+            font-size: 96px;
             margin-top: 40px;
         }
 
         &-HeaderImage {
-            width: 700px;
-            height: 160px;
+            width: 714px;
+            height: 159px;
         }
 
         &-Figure {
@@ -92,5 +91,6 @@
             padding: 0 310px 0 335px;
             max-width: 1580px;
         }
+
     }
 }
