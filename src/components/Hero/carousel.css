@@ -1,0 +1,9 @@
+.slick-track {
+    width: 155000px !important;
+}
+
+@media only screen and (min-width: 1576px) {
+    .slick-list {
+        padding: auto;
+    }
+}

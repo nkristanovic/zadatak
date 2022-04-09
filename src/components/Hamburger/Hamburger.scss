@@ -1,8 +1,13 @@
 @import '../../lib/style/theme.scss';
 
 .Hamburger {
+
     &-Nav {
         width: 25px;
+
+        @media screen and ($desktop) {
+            display: none;
+        }
     }
 
     &-NavLine {
@@ -21,7 +26,7 @@
         list-style: none;
         display: flex;
         flex-flow: column nowrap;
-        margin-top: 65px;
+        margin-top: 52px;
         max-width: 1024px;
         background-color: $white;
         color: $lightBlue;
@@ -32,18 +37,26 @@
         height: 100%;
         width: 100%;
         font-weight: bold;
+
+        @media screen and ($desktop) {
+            display: none;
+        }
     }
 
     &-NavHamburgerItem {
         padding: 15px 10px;
         text-decoration: none;
 
+        &:first-child {
+            margin-top: 20px;
+        }
+
         @media ($mobileLarge) {
             font-size: 18px;
         }
-    }
 
-    @media screen and ($desktop) {
-        display: none;
+        @media screen and ($desktop) {
+            display: none;
+        }
     }
 }
