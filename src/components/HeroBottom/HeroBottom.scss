@@ -3,7 +3,7 @@
 .HeroBottom {
     background-image: url('../../assets/images/img4.png');
     background-repeat: repeat-x;
-    background-color: $grey;
+    background-color: $gray;
     margin-top: -6px;
 
     &-Figure {
@@ -28,16 +28,15 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        font-size: 18px;
-        margin: 14px 0;
+        font-size: 16px;
+        margin: 14px 0 36px 5px;
         width: 280px;
     }
 
-    @media screen and ($tablet) {}
-
-    @media screen and ($desktop) {}
-
-    @media screen and ($desktopLarge) {}
-
-    @media screen and ($desktopExtraLarge) {}
+    @media screen and ($tablet) {
+        &-Description {
+            font-size: 18px;
+            margin: 14px 0 36px 0;
+        }
+    }
 }

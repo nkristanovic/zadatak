@@ -4,6 +4,13 @@
     display: grid;
     justify-items: center;
 
+    &_2 {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        row-gap: 50px;
+        justify-content: start;
+    }
+
     @media screen and ($mobileLarge) {
         grid-template-columns: repeat(2, 1fr);
         max-width: 697px;
@@ -14,6 +21,12 @@
         padding: 0 190px 0 200px;
         max-width: 1024px;
         justify-items: start;
+
+        &_2 {
+            padding-left: 55px;
+            row-gap: 67px;
+            column-gap: 43px;
+        }
     }
 
     @media screen and ($desktopLarge) {
@@ -21,10 +34,21 @@
         padding: 0 240px 0 262px;
         max-width: 1440px;
         column-gap: 12px;
+
+        &_2 {
+
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 67px;
+            column-gap: 43px;
+        }
     }
 
     @media screen and ($desktopExtraLarge) {
         padding: 0 310px 0 335px;
         max-width: 1580px;
+
+        &_2 {
+            padding-left: 55px;
+        }
     }
 }
