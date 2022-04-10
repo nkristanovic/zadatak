@@ -1,0 +1,24 @@
+@import '../../lib/style/theme.scss';
+
+.ScrollToTop {
+    &-Wrapper {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 2vh;
+        right: 5%;
+        border: 2px solid $lightBlue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+            background-color: $silver;
+        }
+    }
+
+
+}
