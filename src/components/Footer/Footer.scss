@@ -1,0 +1,205 @@
+@import '../../lib/style/theme.scss';
+
+.Footer {
+    background-color: rgba(0, 170, 204, 0.5);
+
+    &-Left {
+        padding: 40px 0 20px 0;
+    }
+
+    &-Figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-Image {
+        object-fit: contain;
+        margin-bottom: 12px;
+        margin-right: 10px;
+    }
+
+    &-Info {
+        text-align: center;
+    }
+
+    &-InfoTitle {
+        font-family: 'Inter', sans-serif;
+        color: $midnight;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 70%;
+        margin: 20px 0;
+    }
+
+    &-InformationDescription {
+        font-family: 'Inter', sans-serif;
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 173.5%;
+
+        &:last-child {
+            padding-bottom: 40px;
+        }
+    }
+
+    &-InfoAddress,
+    &-InfoTelefon,
+    &-InfoMail {
+        font-family: 'Inter', sans-serif;
+        color: $midnight;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        text-decoration: none;
+    }
+
+    &-Information {
+        text-align: center;
+    }
+
+    &-InformationTitle {
+        font-family: 'Inter', sans-serif;
+        color: $white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+
+    @media screen and ($mobileLarge) {
+        &-Right {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media screen and ($tablet) {}
+
+    @media screen and ($desktop) {
+        background-color: $gray;
+        background-image: url('../../assets/images/footer.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+
+        &-Left {
+            padding: 120px 0 0 40px;
+            display: flex;
+        }
+
+        &-Figure {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &-Image {
+            margin-right: 0;
+        }
+
+        &-Info {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        &-InfoTitle {
+            font-size: 17px;
+            line-height: 175%;
+            margin: 0 0 40px 0;
+        }
+
+        &-InfoAddress,
+        &-InfoTelefon,
+        &-InfoMail {
+            font-size: 17px;
+            line-height: 130%;
+        }
+
+        &-Right {
+            margin-left: calc(38% - 100px);
+        }
+
+        &-Information {
+            text-align: left;
+            margin-right: 55px;
+        }
+
+        &-InformationTitle {
+            font-size: 18px;
+            line-height: 170%;
+            margin-bottom: 10px;
+        }
+
+        &-InformationDescription {
+            font-size: 13px;
+            line-height: 170%;
+        }
+
+    }
+
+    @media screen and ($desktopLarge) {
+        background-size: contain;
+
+        &-Left {
+            padding: 277px 0 0 62px;
+        }
+
+        &-Info {
+            margin-left: 72px;
+        }
+
+        &-InfoTitle {
+            font-size: 18px;
+            margin: 0 0 30px 0;
+        }
+
+        &-InfoAddress,
+        &-InfoTelefon,
+        &-InfoMail {
+            font-size: 18px;
+            line-height: 155.5%;
+        }
+
+        &-Right {
+            margin-top: 152px;
+            margin-left: calc(35% - 100px);
+        }
+
+        &-Information {
+            margin-right: 112px;
+        }
+
+        &-InformationTitle {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    @media screen and ($desktopExtraLarge) {
+        padding-left: 80px;
+        background-size: cover;
+
+        &-Left {
+            padding: 230px 0 0 50px;
+        }
+
+        &-InfoTitle {
+            margin: 0 0 32px 0;
+        }
+
+        &-Right {
+            margin-top: 100px;
+            margin-left: calc(35% - 100px);
+        }
+    }
+}

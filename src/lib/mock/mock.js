@@ -30,4 +30,43 @@ export const comments = [
         name: 'Nikola Nikic, CEO Geogea'
     }
 
+];
+
+export const information = [
+    {
+        id: 1,
+        title: 'Irgendwie',
+        inf1: 'Lorem',
+        inf2: 'Ipsum',
+        inf3: 'Dolor',
+        inf4: 'Sit amet',
+        inf5: 'Consectetur',
+        inf6: 'Adipiscing elit',
+        inf7: 'Nulla quis',
+        inf8: 'Elmentum',
+        inf9: 'Lacus'
+    },
+    {
+        id: 2,
+        title: 'Irgendwo',
+        inf1: 'Lorem',
+        inf2: 'Ipsum',
+        inf3: 'Dolor',
+        inf4: 'Sit amet',
+        inf5: 'Consectetur',
+        inf6: 'Adipiscing elit',
+        inf7: 'Nulla quis',
+        inf8: 'Elmentum',
+        inf9: 'Lacus'
+    },
+    {
+        id: 3,
+        title: 'Irgendwann',
+        inf1: 'Lorem',
+        inf2: 'Ipsum',
+        inf3: 'Dolor',
+        inf4: 'Sit amet',
+        inf5: 'Consectetur',
+        inf6: 'Adipiscing elit'
+    }
 ]
