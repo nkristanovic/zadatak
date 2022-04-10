@@ -147,7 +147,35 @@ export const filters = [
         id: 7,
         title: 'Wherever'
     },
-]
+];
+
+export const filtersMobile = [
+    {
+        id: 1,
+        title: 'Someone'
+    },
+    {
+        id: 2,
+        title: 'Somewhere'
+    },
+    {
+        id: 3,
+        title: 'Sometime'
+    },
+    {
+        id: 4,
+        title: 'Someplace'
+    },
+    {
+        id: 5,
+        title: 'In summertime'
+    },
+    {
+        id: 6,
+        title: 'Wherever'
+    },
+];
+
 export const sectionOne = [
     {
         id: 1,

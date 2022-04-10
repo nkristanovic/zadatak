@@ -4,15 +4,16 @@ import img8 from '../../assets/images/img8.png';
 import { VscArrowRight } from 'react-icons/vsc';
 import Grid from '../Grid/Grid';
 import { filters, sectionOne } from '../../lib/mock/mock';
+import Filter from '../Filter/Filter';
 const SectionOne = () => {
     return (
         <section className="SectionOne">
-
+            <Filter />
             <div className="SectionOne-Filter">
                 {filters.map((filter, index) => (
                     <p className="SectionOne-FilterItem" activeclassname="SectionOne-FilterItem_active" key={index}> {filter.title}</p>
                 ))}
-            </div >
+            </div>
             <div className='SectionOne-Content'>
                 <figure className='SectionOne-Figure'>
                     <img src={img8} alt="Image 8" className='SectionOne-Image' />
