@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import HeroBottom from './components/HeroBottom/HeroBottom';
 import SectionOne from './components/SectionOne/SectionOne';
 import SectionTwo from './components/SectionTwo/SectionTwo';
+import Comments from './components/Comments/Comments';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroBottom />
       <SectionOne />
       <SectionTwo />
+      <Comments />
     </div>
   );
 }

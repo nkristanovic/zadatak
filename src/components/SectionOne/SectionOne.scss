@@ -10,7 +10,8 @@
 
     &-Filter {
         height: 100%;
-        display: flex;
+        // display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         width: 689px;
@@ -70,6 +71,7 @@
     &-Button {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     &-ButtonText {
