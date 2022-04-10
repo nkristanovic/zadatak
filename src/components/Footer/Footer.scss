@@ -18,7 +18,7 @@
     &-Image {
         object-fit: contain;
         margin-bottom: 12px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     &-Info {
@@ -27,7 +27,7 @@
 
     &-InfoTitle {
         font-family: 'Inter', sans-serif;
-        color: $midnight;
+        color: $white;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -52,7 +52,7 @@
     &-InfoTelefon,
     &-InfoMail {
         font-family: 'Inter', sans-serif;
-        color: $midnight;
+        color: $white;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -113,6 +113,7 @@
         }
 
         &-InfoTitle {
+            color: $midnight;
             font-size: 17px;
             line-height: 175%;
             margin: 0 0 40px 0;
@@ -121,6 +122,7 @@
         &-InfoAddress,
         &-InfoTelefon,
         &-InfoMail {
+            color: $midnight;
             font-size: 17px;
             line-height: 130%;
         }

@@ -1,12 +1,11 @@
 import React from 'react';
 import './Hero.scss';
 import triangles from '../../assets/images/triangles.png';
-import img1 from '../../assets/images/img1.png';
-import img3 from '../../assets/images/img3.png';
 import './carousel.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { infinity } from '../../lib/mock/mock';
 
 
 function SampleNextArrow(props) {
@@ -33,6 +32,7 @@ function SamplePrevArrow(props) {
 const Hero = () => {
     const settings = {
         dots: false,
+        centerMode: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
@@ -44,6 +44,8 @@ const Hero = () => {
             {
                 breakpoint: 1024,
                 settings: {
+                    dots: true,
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
@@ -51,6 +53,8 @@ const Hero = () => {
             {
                 breakpoint: 600,
                 settings: {
+                    dots: true,
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
@@ -58,6 +62,8 @@ const Hero = () => {
             {
                 breakpoint: 480,
                 settings: {
+                    dots: true,
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -73,15 +79,12 @@ const Hero = () => {
             <div>
                 <div className='Hero-CarouselWrapper'>
                     <Slider {...settings}>
-                        <div className='Hero-Figure'>
-                            <img src={img1} alt='image 1' className='Hero-Image' style={{ width: 714 }} />
-                        </div>
-                        <div className='Hero-Figure'>
-                            <img src={img1} alt='image 2' className='Hero-Image' style={{ width: 836 }} />
-                        </div>
-                        <div className='Hero-Figure'>
-                            <img src={img3} alt='image 3' className='Hero-Image' style={{ width: 836 }} />
-                        </div>
+                        {infinity.map((info, index) => (
+                            <div className='Hero-Figure' key={index}>
+                                <img src={info.imgUrl} alt={info.altUrl} className='Hero-Image' />
+                            </div>
+                        ))}
+
                     </Slider>
                 </div>
             </div>

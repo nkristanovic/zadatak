@@ -2,11 +2,17 @@
     width: 155000px !important;
 }
 
-@media only screen and (min-width: 1576px) {
+/* @media only screen and (min-width: 1350px) {
     .slick-list {
-        padding: auto;
+        padding-left: 300px !important;
     }
 }
+
+@media only screen and (min-width: 1576px) {
+    .slick-list {
+        padding-left: 400px !important;
+    }
+} */
 
 .slick-prev:before,
 .slick-next:before {

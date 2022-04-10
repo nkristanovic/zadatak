@@ -1,30 +1,20 @@
 import React from 'react';
 import './HeroBottom.scss';
-import img6 from '../../assets/images/img6.png';
 import Grid from '../Grid/Grid';
+import { heroBottom } from '../../lib/mock/mock';
 const HeroBottom = () => {
 
     return (
         <div className="HeroBottom">
             <Grid>
-                <div className='HeroBottom-Wrapper'>
-                    <figure className='HeroBottom-Figure'>
-                        <img src={img6} alt="image6" className="HeroBottom-Image" />
-                    </figure>
-                    <p className="HeroBottom-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div className='HeroBottom-Wrapper'>
-                    <figure className='HeroBottom-Figure'>
-                        <img src={img6} alt="image6" className="HeroBottom-Image" />
-                    </figure>
-                    <p className="HeroBottom-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div className='HeroBottom-Wrapper'>
-                    <figure className='HeroBottom-Figure'>
-                        <img src={img6} alt="image6" className="HeroBottom-Image" />
-                    </figure>
-                    <p className="HeroBottom-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+                {heroBottom.map((info, index) => (
+                    <div className='HeroBottom-Wrapper' key={index}>
+                        <figure className='HeroBottom-Figure'>
+                            <img src={info.imgUrl} alt={info.altUrl} className="HeroBottom-Image" />
+                        </figure>
+                        <p className="HeroBottom-Description">{info.description}</p>
+                    </div>
+                ))}
             </Grid>
         </div>
     );

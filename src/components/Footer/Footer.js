@@ -5,6 +5,7 @@ import instagram from '../../assets/images/instagram.png';
 import youtube from '../../assets/images/youtube.png';
 import twitter from '../../assets/images/twitter.png';
 import { information } from '../../lib/mock/mock';
+
 const Footer = () => {
     return (
         <footer className="Footer">

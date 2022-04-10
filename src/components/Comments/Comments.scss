@@ -30,7 +30,7 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
-        margin: 14px 0 20px 5px;
+        margin: 14px 0 20px;
         width: 260px;
         color: $onyx;
     }
@@ -42,13 +42,13 @@
         font-size: 14px;
         line-height: 22px;
         color: $regentGray;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
 
     @media screen and ($mobileLarge) {
         &-InfoDescription {
             font-size: 15px;
-            width: 400px;
+            width: 450px;
             line-height: 28px;
         }
 
@@ -60,13 +60,16 @@
     @media screen and ($tablet) {
         &-InfoDescription {
             font-size: 15px;
-            width: 400px;
+            width: 450px;
             line-height: 28px;
         }
 
     }
 
     @media screen and ($desktop) {
+        &-InfoName {
+            margin-bottom: 10px;
+        }
 
         &-Wrapper {
             padding: 0 190px 0 195px;

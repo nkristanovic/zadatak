@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { comments } from '../../lib/mock/mock';
 import quotation from '../../assets/images/quotation.png';
 import './slider.css';
+
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -37,6 +38,15 @@ const Comments = () => {
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
     };
     return (
         <div className="Comments">

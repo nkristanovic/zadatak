@@ -10,3 +10,12 @@
 .slick-next:before {
     content: url('../../assets/images/right-arrow.png') !important;
 }
+
+.slick-dots {
+    bottom: 4px !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: 0 !important;
+}
