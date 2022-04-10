@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { comments } from '../../lib/mock/mock';
 import quotation from '../../assets/images/quotation.png';
-
+import './slider.css';
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
             className={className}
-            style={{ ...style, right: 'calc(10% - 25px)', display: "block", background: "red" }}
+            style={{ ...style, right: 'calc(10% - 25px)', display: "block" }}
             onClick={onClick}
         />
     );
@@ -22,7 +22,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, left: 'calc(10% - 25px)', display: "block", background: "green", zIndex: 1 }}
+            style={{ ...style, left: 'calc(10% - 25px)', display: "block", zIndex: 1 }}
             onClick={onClick}
         />
     );

@@ -1,13 +1,3 @@
-.slick-track {
-    width: 155000px !important;
-}
-
-@media only screen and (min-width: 1576px) {
-    .slick-list {
-        padding: auto;
-    }
-}
-
 .slick-prev:before,
 .slick-next:before {
     font-size: 40px !important;
